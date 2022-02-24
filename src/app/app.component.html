@@ -3,9 +3,13 @@
     <div class="logo-container">PLATZ FUER LOGO</div>
 
     <ul class="menu-items">
-      <li><mat-icon>fact_check</mat-icon>Dashboard</li>
-      <li><mat-icon>person_outline</mat-icon>User</li>
-      
+      <li routerLink="/dashboard/">
+        <mat-icon>fact_check</mat-icon>Dashboard
+      </li>
+      <li routerLink="/user/">
+        <mat-icon>person_outline</mat-icon>User
+      </li>
+
     </ul>
 
   </mat-drawer>
@@ -20,6 +24,9 @@
         <span>Simple CRM</span>
       </mat-toolbar-row>
     </mat-toolbar>
+    <div class="router-container">
+      <router-outlet></router-outlet>
+    </div>
 
   </div>
 
