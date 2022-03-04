@@ -11,7 +11,7 @@ import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.compo
 })
 export class DialogEditUserComponent implements OnInit {
 
-  user!: User;
+  user: User = new User();
   birthDate!: Date;
   loading = false;
   userId!: string;
